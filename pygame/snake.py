@@ -100,10 +100,10 @@ while True:
                 if main_game.snake.direction.y != -1:
                     main_game.snake.direction = Vector2(0, 1)
             if event.key == pygame.K_LEFT:
-                if main_game.snake.direction.y != 1:
+                if main_game.snake.direction.x != 1:
                     main_game.snake.direction = Vector2(-1, 0)
             if event.key == pygame.K_RIGHT:
-                if main_game.snake.direction.y != -1:
+                if main_game.snake.direction.x != -1:
                     main_game.snake.direction = Vector2(1, 0)
     screen.fill((252, 161, 3))
     main_game.draw_elements()
